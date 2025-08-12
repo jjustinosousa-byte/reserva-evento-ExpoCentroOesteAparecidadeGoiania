@@ -149,13 +149,18 @@
     let estandesSelecionados = [];
 
     const estandes = [];
-    for (let i = 1; i <= 33; i++) estandes.push({ id: `A${i}`, cor: '#f4e542' });
-    for (let i = 34; i <= 45; i++) estandes.push({ id: `B${i}`, cor: '#ffb347' });
-    for (let i = 46; i <= 78; i++) estandes.push({ id: `C${i}`, cor: '#b0e0e6' });
-    for (let i = 79; i <= 105; i++) estandes.push({ id: `D${i}`, cor: '#98fb98' });
-    for (let i = 106; i <= 130; i++) estandes.push({ id: `E${i}`, cor: '#dda0dd' });
-    for (let i = 131; i <= 155; i++) estandes.push({ id: `F${i}`, cor: '#f08080' });
-    for (let i = 156; i <= 182; i++) estandes.push({ id: `G${i}`, cor: '#87ceeb' });
+    for (let i = 1; i <= 19; i++) estandes.push({ id: `A${i}`, cor: '#f4e542' });
+    for (let i = 20; i <= 34; i++) estandes.push({ id: `B${i}`, cor: '#ffb347' });
+    for (let i = 35; i <= 49; i++) estandes.push({ id: `C${i}`, cor: '#b0e0e6' });
+    for (let i = 50; i <= 65; i++) estandes.push({ id: `D${i}`, cor: '#98fb98' });
+    for (let i = 66; i <= 81; i++) estandes.push({ id: `E${i}`, cor: '#dda0dd' });
+    for (let i = 82; i <= 97; i++) estandes.push({ id: `F${i}`, cor: '#f08080' });
+    for (let i = 98; i <= 114; i++) estandes.push({ id: `G${i}`, cor: '#87ceeb' });
+    for (let i = 115; i <= 131; i++) estandes.push({ id: `H${i}`, cor: '#F4B183' });
+    for (let i = 132; i <= 148; i++) estandes.push({ id: `I${i}`, cor: '#F0668D' });
+    for (let i = 149; i <= 166; i++) estandes.push({ id: `J${i}`, cor: '#BF9000' });
+    for (let i = 167; i <= 182; i++) estandes.push({ id: `K${i}`, cor: '#3967B9' });
+    for (let i = 183; i <= 196; i++) estandes.push({ id: `L${i}`, cor: '#CC5D12' });
 
     async function carregarReservas() {
       const snapshot = await db.collection("reservas").get();
